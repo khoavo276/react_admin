@@ -23,6 +23,7 @@ module.exports = {
       'error',
       { endOfLine: 'auto' },
       { usePrettierrc: true }
-    ]
+    ],
+    'react/prop-types': 0
   }
 };

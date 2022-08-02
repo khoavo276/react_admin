@@ -1,0 +1,17 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  min-width: 1024px;
+  font-size: 1rem !important;
+  word-break: break-word;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  height: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,95 @@
+.list {
+  &--spacing {
+    background: white;
+    padding: 1.75rem 1.25rem 1.5rem;
+    border-radius: 5px;
+  }
+
+  &__statistic {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+
+  &__controls {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    .list__control {
+      min-width: 12rem;
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
+      font-weight: bold;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__status {
+    margin: 0 -0.25rem;
+    padding: 0.125rem 0.25rem;
+    background: #2ca6e0;
+    color: white;
+  }
+
+  .ant-list-item:first-child {
+    padding-top: 0;
+  }
+
+  &__body {
+    background-color: white;
+    border-radius: 5px;
+    .ant-table .ant-table-thead > tr > th {
+      text-align: left;
+      padding: 0 0.8rem;
+    }
+    .ant-table tbody > tr > td {
+      border-right: 0 !important;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    padding: 1rem 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+    &.normal {
+      justify-content: flex-start !important;
+    }
+    .ant-btn {
+      margin-left: 1rem;
+    }
+    button {
+      min-width: 110px;
+    }
+    &-right {
+      display: flex;
+      button {
+        min-width: 130px;
+      }
+      > div {
+        margin-left: 1rem;
+      }
+    }
+    &__dropdown {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+      background-image: url(../img/actions.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      &.ant-dropdown-open {
+        background-image: url(../img/actions_blue.png);
+      }
+    }
+  }
+  .only-search {
+    justify-content: flex-end !important;
+  }
+}

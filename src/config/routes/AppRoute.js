@@ -1,0 +1,37 @@
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
+import { MainLayout } from '@layouts';
+import { useSelector } from 'react-redux';
+import { PATHS } from '../paths';
+
+const AppRoute = ({
+  component: Component,
+  layout: Layout,
+  private: Private,
+  ...rest
+}) => {
+  const { isLogin } = useSelector(state => state.user);
+  const redirectPath = PATHS.login;
+  const isRedirect = Private ? !isLogin : false;
+
+  return (
+    <Route
+      {...rest}
+      render={props => {
+        return isRedirect ? (
+          <Redirect to={{ pathname: redirectPath }} />
+        ) : (
+          <Layout>
+            <Component {...props} />
+          </Layout>
+        );
+      }}
+    />
+  );
+};
+
+AppRoute.defaultProps = {
+  layout: MainLayout
+};
+
+export default AppRoute;
