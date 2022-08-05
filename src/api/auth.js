@@ -10,7 +10,6 @@ const signIn = data => {
     .then(response => {
       const mapper = invert(CREDENTIALS_MAPPER);
       const credentials = mapDataFromObject(response.headers, mapper);
-
       return Promise.resolve(credentials);
     })
     .catch(error => Promise.reject(error.message));

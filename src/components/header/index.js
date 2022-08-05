@@ -27,7 +27,7 @@ const Header = () => {
             <Row justify="space-between" align="center">
               <Col>
                 <Link to={PATHS.dashboard} className="header-logo">
-                  謎解き研修 適性診断システム管理画面
+                  Dashboard
                 </Link>
               </Col>
               <Col>

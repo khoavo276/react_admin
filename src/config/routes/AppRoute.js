@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import { MainLayout } from '@layouts';
 import { useSelector } from 'react-redux';
 import { PATHS } from '../paths';
 
@@ -28,10 +27,6 @@ const AppRoute = ({
       }}
     />
   );
-};
-
-AppRoute.defaultProps = {
-  layout: MainLayout
 };
 
 export default AppRoute;

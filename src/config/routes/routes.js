@@ -1,7 +1,7 @@
 import { EmptyLayout, MainLayout } from '@layouts';
 import LoginPage from '@pages/login';
 import { PATHS } from '@config/paths';
-import DashBoard from '@pages/DashBoard';
+import DashBoard from '@pages/dashBoard';
 
 export const ROUTES = [
   {
