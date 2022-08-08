@@ -8,15 +8,13 @@ export const ROUTES = [
     path: PATHS.login,
     layout: EmptyLayout,
     component: LoginPage,
-    exact: true,
-    breadcrumbName: 'Login'
+    exact: true
   },
   {
     path: PATHS.dashboard,
     layout: MainLayout,
     component: DashBoard,
     exact: true,
-    private: true,
-    breadcrumbName: 'Dashboard'
+    private: true
   }
 ];

@@ -1,23 +1,24 @@
-# SILVA Admin
-3. Install packages
+# MINRALLY Admin
+
+1. Install packages
 
 ```
 yarn install
 ```
 
-4. Start dev server
+2. Start dev server
 
 ```
 yarn start
 ```
 
-5. Build project
+3. Build project
 
 ```
 yarn build
 ```
 
-6. Deployment
+4. Deployment
 
 - staging
 
@@ -30,7 +31,3 @@ Build the project and push it to release/staging branch
 ```
 Build the project and push it to release/production branch
 ```
-
-## ENV
-
-API_BASE_PATH: https://dev.enconne.com/apis/v1

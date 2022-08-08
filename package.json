@@ -1,7 +1,6 @@
 {
   "name": "base_admin",
   "version": "0.1.0",
-  "private": true,
   "homepage": "/admin",
   "dependencies": {
     "@ant-design/charts": "^1.3.6",

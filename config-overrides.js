@@ -26,8 +26,6 @@ module.exports = override(
     '@api': path.resolve(__dirname, 'src/api'),
     '@components': path.resolve(__dirname, 'src/components'),
     '@config': path.resolve(__dirname, 'src/config'),
-    '@contexts': path.resolve(__dirname, 'src/contexts'),
-    '@hooks': path.resolve(__dirname, 'src/hooks'),
     '@layouts': path.resolve(__dirname, 'src/layouts'),
     '@pages': path.resolve(__dirname, 'src/pages'),
     '@utils': path.resolve(__dirname, 'src/utils'),

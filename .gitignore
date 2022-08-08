@@ -23,7 +23,5 @@ yarn-error.log*
 .idea/.gitignore
 .idea/modules.xml
 .idea/vcs.xml
-src/pages/creator-management/api/.keep
-src/pages/creator-management/components/.keep
 build
 .idea

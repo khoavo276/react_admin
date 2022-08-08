@@ -10,7 +10,6 @@ const AppRoute = ({
   ...rest
 }) => {
   const { isLogin } = useSelector(state => state.user);
-  const redirectPath = PATHS.login;
   const isRedirect = Private ? !isLogin : false;
 
   return (
@@ -18,7 +17,7 @@ const AppRoute = ({
       {...rest}
       render={props => {
         return isRedirect ? (
-          <Redirect to={{ pathname: redirectPath }} />
+          <Redirect to={{ pathname: PATHS.login }} />
         ) : (
           <Layout>
             <Component {...props} />
